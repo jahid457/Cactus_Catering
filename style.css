@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#all{
+ background: #fff2df;
+}
+
+
+/* header start */
+.header{
+ background: #0070a6;
+ min-height: 60px;
+ padding: 33px 5%;
+}
+.header h1{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: coral;
+}
+
+.header span{
+    font-size: 27px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* nav start */
+.nav{
+ background: #0095c6;
+ min-height: 60px;
+ padding: 0px 5%;
+ display: block;
+ overflow: hidden;
+}
+.nav ul{
+margin: 0;
+padding: 0;
+height: auto;
+
+}
+.nav ul li{
+ list-style-type: none;
+ display: inline-block;
+ float: left;
+ height: 60px;
+ text-align: center;
+}
+.nav ul li a{
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: bold;
+ line-height: 40px;
+ display: block;
+ padding: 10px 30px;
+}
+.nav ul li a:hover, .nav ul li a.active{
+    background: #00a9e1;
+}
+
+
+
+
+
+
+/* main start */
+.main{
+    min-height: 444px;
+    padding: 0px 5%;
+}
+.main .welcome{
+  width: 70%;
+  float: left;
+  padding: 0 5% 5% 0;
+}
+.main .sidebar{
+ width: 25%;
+ float: left;
+ color: #0095c6;
+}
+.main p{
+    line-height: 25px;
+    text-align: justify;
+}
+.grid1, .grid2{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    line-height: 25px;
+}
+.grid3{
+    float: left;
+    width: 30%;
+    margin-right: 0;
+    line-height: 25px;
+}
+img{
+    max-width: 100%;
+    height: 200px;
+}
+
+
+
+
+
+
+
+/* footer start */
+.footer{
+    clear: both;
+    background: #0070a6;
+    min-height: 22px;
+    padding: 33px 5%;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* -------------- */
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+/* tab er jonno */
+div .menu{
+    clear: both;
+    cursor: pointer;
+    padding: 22px;
+    background: #005367;
+    color: #fff;
+    display: none;
+    text-align: center;
+}
+
+
+/* ====== responsive css ======= */
+/*  */
+/*  */
+
+
+
+/* tab er jonno */
+@media screen and (max-width: 800px){
+    .nav{
+        padding: 0;
+     }
+
+    .nav ul{
+        display: none;
+     }
+
+    .nav ul li{
+        width: 100%;
+    }
+
+   div .menu{
+       display: block;
+   }
+
+   .main .welcome{
+    width: 100%;
+    float: none;
+  }
+  .main .sidebar{
+   width: 100%;
+   clear: both;
+   float: none;
+  }
+.grid1{
+    width: 47%;
+    margin-right: 6%;
+}
+.grid2{
+    width: 47%;
+    margin-right: 0;
+}
+.grid3{
+    width: 100%;
+}
+}
+
+
+
+/* phn er jonno */
+@media screen and (max-width: 500px){
+.grid1{
+    width: 100%;
+    margin: 0;
+}
+.grid2{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.grid2 strong{
+   padding-top: 12px;
+}
+.grid2 p{
+    margin-top: -10px;
+}
+.grid3{
+    width: 100%;
+    margin: 0;
+}
+}

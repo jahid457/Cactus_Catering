@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+}
+.allabout{
+    margin-bottom: 30px;
+}
+.about_text{
+    text-align: center;
+    margin-top: 40px;
+    color: #696969;
+}
+
+.about_text p{
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    color: #696969;
+    text-align: justify;
+}
+.about1{
+    color: #0095c6;
+}
+.about2{
+    color: #0095c6;
+}
+
+.card{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.card_page{
+    /* position: absolute; */
+    width: 320px;
+    height: 420px;
+    padding: 30px;
+}
+.page_01{
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    background: rgb(140, 134, 221);
+}
+.page_02{
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    background: rgb(140, 134, 221);
+}
+.page_03{
+    width: 320px;
+    height: 420px;
+    position: absolute;
+    background: rgb(140, 134, 221);
+}
+
+
+
+
+/* ---------image part start--------- */
+.card_page .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.card_page .image img{
+   /* width: 100%; */
+   height: 210px;
+   width: 210px;
+   border-radius: 50%;
+   transition: 0.5s;
+   cursor: pointer;
+} 
+.card_page .image img:hover{
+    opacity: .5;
+    transform: translateX(30%);
+    /* transform: translateZ(30%) */
+}
+.card_page .image .button{
+    height: 48px;
+    width: 320px;
+    background: rgb(187, 58, 8);
+    margin-top: 95px;
+    padding-top: 16px;
+}
+.card_page .image .button:hover{
+    background: rgb(35, 116, 49);
+    cursor: pointer;
+}
+.card_page .image .button a{
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 33%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+/* ------------image part end--------- */
+
+
+
+
+
+
+
+
+/* ------------details start------------- */
+.card_page .details{
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: rgb(228, 208, 34);
+    transition:  2s;
+    transform-origin: left;
+    transform:perspective(2000px) rotateY(-90deg);
+    margin-top: -455px; 
+}
+.card_page:hover .details{
+    transform: perspective(2000px) rotateY(0deg);
+}
+.card_page .details .center{
+    padding: 20px;
+    text-align: center;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card_page .details .center h1{
+    margin: 0;
+    padding: 0;
+    color: #ff3636;
+    line-height: 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.card_page .details .center h3{
+    font-size: 14px;
+    color: #262626;
+}
+.card_page .details .center p{
+    margin: 5px 0;
+    padding: 0;
+    font-size: 13px;
+    color: #262626;
+}
+.card_page .details .center ul{
+    margin: 10px 0 auto;
+    padding: 0;
+    display: table;
+}
+.card_page .details .center ul li{
+    list-style-type: none;
+    margin: 0 5px;
+    float: left;
+}
+.card_page .details .center ul li a{
+    display: block;
+   background: #262626;
+   color:white;
+   width: 35px;
+   height: 35px;
+   text-decoration: none;
+   line-height: 30px;
+   text-align: center;
+   transform: .5s;
+   font-size: 13px;
+   font-style: oblique;
+}
+.card_page .details .center ul li a:hover{
+    background: #ff3636;
+}
+/* ------------details start------------- */
